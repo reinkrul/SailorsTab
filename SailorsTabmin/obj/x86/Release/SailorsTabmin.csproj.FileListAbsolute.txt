@@ -1,0 +1,12 @@
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SQLite.Interop.dll
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\configuration.xml
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SailorsTabmin.exe
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SailorsTab.Domain.dll
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SailorsTab.Repositories.dll
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\System.Data.SQLite.dll
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\System.Data.SQLite.pdb
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\System.Data.SQLite.xml
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\obj\x86\Release\ResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\obj\x86\Release\SailorsTabmin.exe
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SailorsTabmin.exe.config
+\\vmware-host\Shared Folders\SailorsBoxmeer\SailorsTabmin\bin\Release\SailorsTab.Common.dll

@@ -1,0 +1,55 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SailorsTab.Reporting/Domain/ConsumptiesOpDatumGeaggregeerd.cs">
+    <Files>
+      <File FileName="SailorsTab.Common/Log.cs" Line="1" Column="1" />
+      <File FileName="SailorsTab.Reporting/MyClass.cs" Line="1" Column="1" />
+      <File FileName="SailorsTab.Reporting/IRekeningReport.cs" Line="11" Column="55" />
+      <File FileName="SailorsTab.Reporting/Html/HtmlRekeningReport.cs" Line="48" Column="4" />
+      <File FileName="SailorsTab.Domain/Rekening.cs" Line="13" Column="12" />
+      <File FileName="SailorsTab.Common/OverzichtWidget.cs" Line="54" Column="10" />
+      <File FileName="SailorsTab.Reporting/Domain/ConsumptiesVoorDatum.cs" Line="16" Column="18" />
+      <File FileName="SailorsTab.Reporting/Domain/ConsumptiesOpDatum.cs" Line="28" Column="60" />
+      <File FileName="SailorsTab.Reporting/ReportingUtil.cs" Line="9" Column="48" />
+      <File FileName="SailorsTab.ReportingTests/Test.cs" Line="17" Column="1" />
+      <File FileName="SailorsTab.ReportingTests/Html/HtmlRekeningReportTest.cs" Line="41" Column="17" />
+      <File FileName="SailorsTab.Domain/ConsumptieLog.cs" Line="14" Column="4" />
+      <File FileName="SailorsTab.Reporting/Domain/ConsumptiesOpDatumGeaggregeerd.cs" Line="9" Column="3" />
+      <File FileName="SailorsTab.Reporting/Domain/ConsumptiesVoorDatumGeaggregeerd.cs" Line="20" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SailorsTab.Domain" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
+          <Node name="SailorsTab.Reporting" expanded="True">
+            <Node name="Domain" expanded="True">
+              <Node name="ConsumptiesOpDatumGeaggregeerd.cs" selected="True" />
+            </Node>
+            <Node name="Html" expanded="True" />
+          </Node>
+          <Node name="SailorsTab.ReportingTests" expanded="True">
+            <Node name="Html" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
