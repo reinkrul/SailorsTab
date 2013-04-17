@@ -10,6 +10,12 @@ namespace SailorsTab.Repositories
 			int ordinal = dataReader.GetOrdinal(name);
 			return dataReader.GetInt32(ordinal);
 		}
+
+        public static DateTime GetDateTime(this IDataReader dataReader, String name)
+        {
+            int ordinal = dataReader.GetOrdinal(name);
+            return dataReader.GetDateTime(ordinal);
+        }
 		
 		public static string GetString(this IDataReader dataReader, String name)
 		{

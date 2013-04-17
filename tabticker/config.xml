@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+    <enable-sounds>true</enable-sounds>
+    <http-agent-port>8080</http-agent-port>
+    <max-notifications>15</max-notifications>
+    <notification-duration>120000</notification-duration>
+</config>

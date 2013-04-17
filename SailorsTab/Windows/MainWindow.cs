@@ -10,7 +10,8 @@ namespace SailorsTab.Windows
 	public class MainWindow : Window
 	{
 		private readonly Log log = new Log(Program.LogFile, typeof(MainWindow));
-		
+
+        private HttpAgent httpAgent;
 		private IRekeningRepository rekeningRepository;
 		private IConsumptieRepository consumptieRepository;
 		private VBox vbox;
@@ -22,9 +23,11 @@ namespace SailorsTab.Windows
 		private Rekening huidigeRekening;
 		private Button afrekenenButton;
 		
-		public MainWindow (IRepositoryFactory repositoryFactory)
+		public MainWindow (HttpAgent httpAgent, IRepositoryFactory repositoryFactory)
 			: base(Gtk.WindowType.Toplevel)
 		{
+            this.httpAgent = httpAgent;
+
 			WindowPosition = WindowPosition.Center;
 			
 			rekeningRepository = repositoryFactory.CreateRepository<IRekeningRepository>();
@@ -69,6 +72,7 @@ namespace SailorsTab.Windows
 			{
 				for(int i = 0; i < bestelling.Aantal; i++)
 				{
+                    httpAgent.notify(bestelling.Rekening.Naam, bestelling.Consumptie.ToStringMetPrijs());
 					try
 					{
 						rekeningRepository.ConsumptieAfrekenen(bestelling.Rekening, bestelling.Consumptie);

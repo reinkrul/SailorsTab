@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -74,6 +74,7 @@
     <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpAgent.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Windows\MainWindow.cs" />
@@ -124,6 +125,10 @@
     <ProjectReference Include="..\SailorsTab.Domain\SailorsTab.Domain.csproj">
       <Project>{EDDD35CF-9F26-4530-A2C8-7CB97C924540}</Project>
       <Name>SailorsTab.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SailorsTab.Reporting\SailorsTab.Reporting.csproj">
+      <Project>{38D14306-15B0-4D04-9DAD-C9A7E12C4815}</Project>
+      <Name>SailorsTab.Reporting</Name>
     </ProjectReference>
     <ProjectReference Include="..\SailorsTab.Repositories\SailorsTab.Repositories.csproj">
       <Project>{8320DB6A-A854-4841-AE7D-6110858B82DF}</Project>

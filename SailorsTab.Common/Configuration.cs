@@ -20,6 +20,7 @@ namespace SailorsTab.Common
 		
 		public String ConnectionString { get; set; }
 		public String Password { get; set; }
+        public String AgentUrl { get; set; }
 	}
 }
 

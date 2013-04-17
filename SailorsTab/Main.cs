@@ -7,6 +7,7 @@ using SailorsTab.Common;
 using Gtk;
 using System.Threading;
 using System.Globalization;
+using SailorsTab.Reporting.Services;
 
 namespace SailorsTab
 {
@@ -15,6 +16,7 @@ namespace SailorsTab
         private static readonly Log log = new Log(Program.LogFile, typeof(Program));
 		public static readonly string LogFile = "sailors-tab.log";
         private static readonly string DatabaseFile = "sailorsbar.db";
+        private static readonly string ReportDirectory = "reports";
 		
 		public static void Main (string[] args)
 		{
@@ -37,12 +39,21 @@ namespace SailorsTab
 			}
 			
 			IDbConnection connection = new ConnectionFactory().createConnection(configuration.ConnectionString);
-			
+
+            ReportingService reportingService = new ReportingService(ReportDirectory, connection);
+            try
+            {
+                reportingService.createHtmlReports();
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex);
+            }
 			IRepositoryFactory repositoryFactory = new RepositoryFactory(connection);
 			
 			Application.Init();
 			
-			new MainWindow(repositoryFactory).Show();
+			new MainWindow(new HttpAgent(configuration.AgentUrl), repositoryFactory).Show();
 			
 			Application.Run();
 		}

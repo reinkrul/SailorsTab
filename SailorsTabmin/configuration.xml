@@ -2,4 +2,5 @@
 <Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ConnectionString>URI=file:sailorsbar.db</ConnectionString>
   <Password>cmplivu</Password>
+  <AgentUrl>http://localhost/notification</AgentUrl>
 </Configuration>

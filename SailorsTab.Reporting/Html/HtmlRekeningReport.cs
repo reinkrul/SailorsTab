@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Collections.Generic;
 
 using SailorsTab.Domain;
@@ -14,7 +15,7 @@ namespace SailorsTab.Reporting
 			TextWriter writer = new StreamWriter(outputStream);
 			writeDocumentStart(writer, rekening);
 			writeReportHeader(writer, rekening, consumpties);
-			
+            writeConsumptieTable(writer, consumpties);
 			writeDocumentEnd(writer);
 			writer.Flush();
 		}
@@ -45,7 +46,10 @@ namespace SailorsTab.Reporting
 		void writeConsumptieTable(TextWriter writer, IList<ConsumptieLog> consumpties) {
 			writer.WriteLine("		<table>");
 			writer.WriteLine("			<tr><th>Datum</th><th>Consumptie</th><th>Aantal</th>");
-			
+            foreach (ConsumptieLog log in consumpties.OrderByDescending(c => c.Datum))
+            {
+                writer.WriteLine("<tr><td>" + log.Datum + "</td><td>" + log.ConsumptieNaam + "</td><td>1</td></tr>");
+            }
 			writer.WriteLine("		</table>");
 		}
 	}

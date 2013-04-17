@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailorsTab", "SailorsTab\SailorsTab.csproj", "{1F57DF61-FFEA-4E79-A243-2EC528BB9472}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailorsTab.Domain", "SailorsTab.Domain\SailorsTab.Domain.csproj", "{EDDD35CF-9F26-4530-A2C8-7CB97C924540}"
@@ -13,47 +13,41 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailorsTab.Common", "Sailor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailorsTab.Reporting", "SailorsTab.Reporting\SailorsTab.Reporting.csproj", "{38D14306-15B0-4D04-9DAD-C9A7E12C4815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SailorsTab.ReportingTests", "SailorsTab.ReportingTests\SailorsTab.ReportingTests.csproj", "{3BBFD93B-2C70-4C96-B81F-D11B0244E032}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Debug|x86.ActiveCfg = Debug|x86
-		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Debug|x86.Build.0 = Debug|x86
-		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Release|x86.ActiveCfg = Release|x86
-		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Release|x86.Build.0 = Release|x86
 		{1F57DF61-FFEA-4E79-A243-2EC528BB9472}.Debug|x86.ActiveCfg = Debug|x86
 		{1F57DF61-FFEA-4E79-A243-2EC528BB9472}.Debug|x86.Build.0 = Debug|x86
 		{1F57DF61-FFEA-4E79-A243-2EC528BB9472}.Release|x86.ActiveCfg = Release|x86
 		{1F57DF61-FFEA-4E79-A243-2EC528BB9472}.Release|x86.Build.0 = Release|x86
-		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Debug|x86.Build.0 = Debug|Any CPU
-		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Release|x86.ActiveCfg = Release|Any CPU
-		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Release|x86.Build.0 = Release|Any CPU
-		{3BBFD93B-2C70-4C96-B81F-D11B0244E032}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3BBFD93B-2C70-4C96-B81F-D11B0244E032}.Debug|x86.Build.0 = Debug|Any CPU
-		{3BBFD93B-2C70-4C96-B81F-D11B0244E032}.Release|x86.ActiveCfg = Release|Any CPU
-		{3BBFD93B-2C70-4C96-B81F-D11B0244E032}.Release|x86.Build.0 = Release|Any CPU
-		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Debug|x86.Build.0 = Debug|Any CPU
-		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Release|x86.ActiveCfg = Release|Any CPU
-		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Release|x86.Build.0 = Release|Any CPU
 		{EDDD35CF-9F26-4530-A2C8-7CB97C924540}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{EDDD35CF-9F26-4530-A2C8-7CB97C924540}.Debug|x86.Build.0 = Debug|Any CPU
 		{EDDD35CF-9F26-4530-A2C8-7CB97C924540}.Release|x86.ActiveCfg = Release|Any CPU
 		{EDDD35CF-9F26-4530-A2C8-7CB97C924540}.Release|x86.Build.0 = Release|Any CPU
+		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{8320DB6A-A854-4841-AE7D-6110858B82DF}.Release|x86.Build.0 = Release|Any CPU
+		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Debug|x86.ActiveCfg = Debug|x86
+		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Debug|x86.Build.0 = Debug|x86
+		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Release|x86.ActiveCfg = Release|x86
+		{16CBF34C-30C7-41F8-AFDA-44CB4A0C16EA}.Release|x86.Build.0 = Release|x86
 		{FD2B00E8-A41C-46AA-8854-20DF06E9C33C}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FD2B00E8-A41C-46AA-8854-20DF06E9C33C}.Debug|x86.Build.0 = Debug|Any CPU
 		{FD2B00E8-A41C-46AA-8854-20DF06E9C33C}.Release|x86.ActiveCfg = Release|Any CPU
 		{FD2B00E8-A41C-46AA-8854-20DF06E9C33C}.Release|x86.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = SailorsTabmin\SailorsTabmin.csproj
+		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Debug|x86.Build.0 = Debug|Any CPU
+		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Release|x86.ActiveCfg = Release|Any CPU
+		{38D14306-15B0-4D04-9DAD-C9A7E12C4815}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SailorsTabmin\SailorsTabmin.csproj
 	EndGlobalSection
 EndGlobal
